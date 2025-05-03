@@ -27,7 +27,6 @@ A **Flask-based AI web application** that predicts the risk levels of **earthqua
 ---
 
 ## 📁 Folder Structure
-
 disaster-prediction-ai/
 ├── app.py                           # Main Flask application
 ├── requirements.txt                # Required Python packages
@@ -36,33 +35,33 @@ disaster-prediction-ai/
 ├── Dockerfile                      # (Optional) For containerizing the app
 ├── .dockerignore                   # Ignore unnecessary files in Docker builds
 
-├── models/
-│   ├── cyclone_model.pkl
-│   ├── earthquake_model.pkl
-│   ├── flood_model.pkl
-│   └── train_models/               # Keep training code organized
-│       ├── train_cyclone_model.py
-│       ├── train_earthquake_model.py
-│       └── train_flood_model.py
+├── models/                         # Machine Learning models and training code
+│   ├── cyclone_model.pkl           # Cyclone prediction model
+│   ├── earthquake_model.pkl        # Earthquake prediction model
+│   ├── flood_model.pkl             # Flood prediction model
+│   └── train_models/               # Training code for models
+│       ├── train_cyclone_model.py  # Cyclone model training script
+│       ├── train_earthquake_model.py # Earthquake model training script
+│       └── train_flood_model.py    # Flood model training script
 
-├── static/
-│   └── css/
-│       ├── cyclone.css
-│       ├── earthquake.css
-│       ├── flood.css
-│       ├── homepage.css
-│       ├── query.css
-│       ├── safety.css
-│       └── style.css
+├── static/                         # Static files (CSS, images, etc.)
+│   └── css/                        # CSS files for styling
+│       ├── cyclone.css             # Styling for cyclone page
+│       ├── earthquake.css          # Styling for earthquake page
+│       ├── flood.css               # Styling for flood page
+│       ├── homepage.css            # Homepage styling
+│       ├── query.css               # Query page styling
+│       ├── safety.css              # Safety information page styling
+│       └── style.css               # General styling
 
-├── templates/
-│   ├── ai_query.html
-│   ├── cyclone.html
-│   ├── earthquake.html
-│   ├── flood.html
-│   ├── homepage.html
-│   ├── query.html
-│   └── Safety.html
+├── templates/                      # HTML templates for the app
+│   ├── ai_query.html               # Template for AI query page
+│   ├── cyclone.html                # Template for cyclone prediction page
+│   ├── earthquake.html             # Template for earthquake prediction page
+│   ├── flood.html                  # Template for flood prediction page
+│   ├── homepage.html               # Homepage template
+│   ├── query.html                  # Template for query page
+│   └── safety.html                 # Template for safety information page
 
 -----
 

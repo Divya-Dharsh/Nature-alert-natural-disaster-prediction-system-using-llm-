@@ -1,0 +1,216 @@
+/* Global Settings */
+* {
+    font-family: 'Alegreya', serif !important;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 80vh;
+    background: linear-gradient(135deg, #f8f9fa 60%, #e3f2fd);
+    padding: 4rem 2rem;
+    text-shadow: 1px 1px #ccc;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    color: #1b1b1b;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Homepage Header */
+.homepage-header {
+    background: url('../img/group.JPG');
+    background-size: cover;
+    background-position: center top;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 85vh;
+}
+
+/* Home for Children Section */
+.home-for-children {
+    background-color: #ffeeba;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.home-for-children h2 {
+    line-height: 2.5rem !important;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.home-for-children h5 {
+    line-height: 1.8rem;
+}
+
+.home-for-children .btn-success {
+    padding: 8px 25px;
+    font-size: large;
+}
+
+/* Our Focus Section */
+.our-focus .container {
+    margin-top: 3rem !important;
+}
+
+.our-focus .row {
+    margin-top: 1.5rem !important;
+}
+
+.our-focus .card {
+    border: none !important;
+}
+
+.our-focus #focus-first {
+    margin-right: 80px;
+}
+
+.our-focus #focus-second {
+    margin-right: 90px;
+}
+
+/* Media Section */
+.media .container {
+    margin-top: 3rem !important;
+}
+
+.media .row {
+    margin-top: 1.5rem !important;
+}
+
+/* News Section */
+.news-section .card img {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.news-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Section */
+.row-initiative {
+    margin-top: 10px;
+}
+
+.site-footer {
+    margin-top: 30px;
+    line-height: 24px;
+}
+
+.footer-links {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-links li {
+    display: block;
+}
+
+.footer-links.inline li {
+    display: inline-block;
+}
+
+.footer-links li a {
+    color: black;
+}
+
+.footer-logo img {
+    width: 100px;
+}
+
+.social-icons {
+    text-align: right;
+    margin-left: 50px;
+}
+
+.social-icons li {
+    list-style: none;
+    display: inline-block;
+}
+
+.social-icons li a {
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+/* Navbar and Buttons */
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: white;
+}
+
+.navbar-brand {
+    padding-left: 5px;
+}
+
+.navbar-nav {
+    margin-left: 30px;
+}
+
+.nav-item {
+    padding-left: 5px;
+}
+
+.donate-sponsor {
+    margin-right: 10px;
+}
+
+#donate, #sponsor {
+    margin: 5px;
+    padding: 5px 15px;
+}
+
+#sponsor {
+    color: red;
+}
+
+input {
+    padding: 10px 20px;
+}
+
+#button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    animation: pulse 3s infinite ease-out;
+}
+
+/* Media Queries */
+@media (min-width: 576px) {
+    /* Add styles for small screens if needed */
+}
+
+@media (min-width: 768px) {
+    /* Add styles for medium screens if needed */
+}
+
+@media (min-width: 992px) {
+    /* Add styles for large screens */
+}

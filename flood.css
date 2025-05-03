@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #0b2245;
+    padding: 10px 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #FFC107;
+    color: black;
+    font-weight: bold;
+    border-radius: 8px;
+    margin: 3px;
+    transition: 0.3s;
+    font-size: 0.9rem;
+}
+
+.navbar a:hover {
+    background-color: #ffb300;
+    transform: scale(1.05);
+}
+
+/* Hero Section */
+.hero-section {
+    height: 20vh;
+    background: linear-gradient(135deg, #f8f9fa 60%, #e3f2fd);
+    padding: 1rem 1rem;
+    text-shadow: 1px 1px #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section h1 {
+    font-size: 2rem;
+    color: #1b1b1b;
+    margin-bottom: 0.5rem;
+}
+
+.hero-section p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+}
+
+/* Prediction Form Section */
+section.container.mt-5 {
+    margin-top: 1rem !important;
+}
+
+.card {
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    padding: 8px;
+    font-size: 0.95rem;
+}
+
+/* Button */
+.btn-block {
+    padding: 10px 0;
+    font-size: 1rem;
+}
+
+/* Prediction Result Section */
+section.container.mt-5.text-center {
+    margin-top: 1.2rem !important;
+    margin-bottom: 0.5rem;
+}
+
+section.container.mt-5.text-center h3 {
+    font-size: 1.2rem;
+    color: #c00c0c;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #001f3f;
+    color: rgb(233, 224, 224);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* Extra Utilities */
+@media (max-height: 700px) {
+    .hero-section {
+        height: 25vh;
+    }
+    .form-control {
+        font-size: 0.85rem;
+    }
+    .card-title {
+        font-size: 1rem;
+    }
+    .btn-block {
+        font-size: 0.95rem;
+    }
+    section.container.mt-5.text-center h3 {
+        font-size: 1rem;
+    }
+}

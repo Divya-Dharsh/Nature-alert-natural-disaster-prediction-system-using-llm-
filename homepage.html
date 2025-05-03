@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NatureAlert | Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      🌍 <span class="ms-2 fw-bold">NatureAlert</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="{{url_for('home')}}">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{url_for('earth')}}">Earthquake</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{url_for('cyclone')}}">Hurricane</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{url_for('flood')}}">Flood</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{url_for('query')}}">AI Query</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{url_for('fs')}}">Safety Tips</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section text-center d-flex flex-column justify-content-center align-items-center">
+    <h1 class="display-5 fw-bold">Predict Natural Disasters & Stay Safe</h1>
+    <p class="lead">Get real-time predictions and essential safety guidance.</p>
+    <a href="{{url_for('earth')}}" class="btn btn-warning btn-lg mt-3 shadow">Start Prediction</a>
+  </header>
+
+  <!-- News Section -->
+<section class="container mt-5 news-section">
+  <h2 class="text-center text-primary mb-4">Latest News</h2>
+  <div class="row g-4 justify-content-center">
+
+    <!-- Card 1 -->
+    <div class="col-md-4">
+      <div class="card news-card h-100 shadow-sm">
+        <!-- Image Link Updated to Imgur -->
+        <img src="https://i.imgur.com/YOURexample.jpg" class="card-img-top" alt="Flood News">
+        <div class="card-body">
+          <h5 class="card-title">Unprecedented Flooding in Brazil Displaces Hundreds of Thousands</h5>
+          <p class="card-text text-muted">17 March 2025</p>
+          <a href="https://www.msf.org/unprecedented-flooding-brazil-leaves-millions-affected-and-hundreds-thousands-displaced" class="btn btn-outline-primary" target="_blank">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4">
+      <div class="card news-card h-100 shadow-sm">
+        <!-- Image Link Updated to Imgur -->
+        <img src="https://i.imgur.com/XY8fT3x.jpg" class="card-img-top" alt="Cyclone News">
+        <div class="card-body">
+          <h5 class="card-title">Cyclone Zelia Strikes Southeast Asia, Causing Widespread Damage</h5>
+          <p class="card-text text-muted">8 February 2025</p>
+          <a href="https://www.thejakartapost.com/indonesia/2025/02/08/whirlwinds-wreak-havoc-in-regions-amid-extreme-weather-warnings.html" class="btn btn-outline-primary" target="_blank">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4">
+      <div class="card news-card h-100 shadow-sm">
+        <!-- Image Link Updated to Imgur -->
+        <img src="https://i.imgur.com/DPz1lsZ.jpg" class="card-img-top" alt="Storm News">
+        <div class="card-body">
+          <h5 class="card-title">Storm Éowyn Causes Widespread Power Outages Across Ireland and UK</h5>
+          <p class="card-text text-muted">24 January 2025</p>
+          <a href="https://www.theguardian.com/uk-news/live/2025/jan/24/storm-eowyn-uk-weather-scotland-ireland-warning-winds-live-updates" class="btn btn-outline-primary" target="_blank">Read More</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer bg-dark text-light text-center py-3 mt-5">
+    &copy; 2025 <strong>NatureAlert</strong> | Disaster Prediction & Safety Guide
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

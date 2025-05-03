@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Tips - Natural Disasters</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;800&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/safety.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      🌍 <span class="ms-2 fw-bold">NatureAlert</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="{{url_for('home')}}">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{url_for('earth')}}">Earthquake</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{url_for('cyclone')}}">Hurricane</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{url_for('flood')}}">Flood</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{url_for('query')}}">AI Query</a></li>
+        <li class="nav-item"><a class="nav-link active" href="{{url_for('fs')}}">Safety Tips</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section text-center d-flex flex-column justify-content-center align-items-center">
+    <h1 class="display-5 fw-bold">Safety Tips for Natural Disasters</h1>
+    <p class="lead">Stay safe during natural disasters like floods, earthquakes, and hurricanes.</p>
+  </header>
+
+  <!-- Safety Tips Section -->
+  <section class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card shadow-sm p-4">
+          <div class="card-body">
+            <h5 class="card-title text-center mb-4">What to Do During Different Natural Disasters</h5>
+            <h3>What to do during a flood or flash flood</h3>
+            <ul>
+              <li>Move immediately to higher ground or stay on high ground.</li>
+              <li>Continue to check the media for emergency information.</li>
+              <li>Follow instructions from public safety officials. If advised to evacuate, do so immediately.</li>
+              <li>If you must evacuate your home, take only essential items and bring your pets if safe to do so.</li>
+              <li>Do not walk through flowing water. Six inches of swiftly moving water can knock you off your feet.</li>
+              <li>Remember: "Turn Around, Don’t Drown!" Don’t drive through flooded roads. Cars can be swept away in only two feet of moving water.</li>
+            </ul>
+
+            <h3>What to do during an earthquake</h3>
+            <ul>
+              <li>If you are in a car, pull over and stop. Set your parking brake.</li>
+              <li>If you are in bed, turn face down and cover your head and neck with a pillow.</li>
+              <li>If you are outdoors, stay outdoors away from buildings.</li>
+              <li>If you are inside, stay inside and avoid doorways.</li>
+              <li>Expect aftershocks to follow the main shock of an earthquake. Be ready to Drop, Cover, and Hold On.</li>
+              <li>If you are in a damaged building, go outside and quickly move away from the building. Do not re-enter.</li>
+            </ul>
+
+            <h3>What to do during a hurricane</h3>
+            <ul>
+              <li>Avoid driving or going outdoors during a storm. Flooding and winds can make traveling dangerous.</li>
+              <li>Do not walk through flowing water. Six inches of swiftly moving water can knock you off your feet.</li>
+              <li>Remember the phrase "Turn Around, Don’t Drown!" Don’t drive through flooded roads.</li>
+              <li>Stay out of damaged buildings until authorities deem them safe.</li>
+              <li>If you believe there is a gas leak, go outdoors immediately, and do not turn electrical switches or appliances on or off.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stay Safe Alert -->
+  <section class="container my-5 text-center">
+    <h2 class="alert alert-danger">Stay Alert! Stay Safe!</h2>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-dark text-light text-center py-4">
+    &copy; 2025 <strong>NatureAlert</strong> | Disaster Prediction & Safety Guide
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

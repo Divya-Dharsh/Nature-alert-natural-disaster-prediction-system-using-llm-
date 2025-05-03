@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Query</title>
+    <link rel="stylesheet" href="css/query.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="query.html">Query</a>
+        <a href="ai_query.html">AI Query</a>
+    </nav>
+
+    <div class="main">
+        <h1>AI-Generated Response</h1>
+        <p class="subtext">Ask any question, and AI will answer it.</p>
+
+        <div class="form-container">
+            <form action="/ask_ai" method="POST">
+                <label for="question">Enter Your Query:</label>
+                <textarea id="question" name="question" rows="5" required></textarea>
+
+                <button type="submit" class="button">Ask AI</button>
+            </form>
+
+            {% if user_question %}
+                <div class="response-container">
+                    <h2>Your Question:</h2>
+                    <p>{{ user_question }}</p>
+
+                    <h2>AI's Response:</h2>
+                    <p>{{ answer }}</p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Footer -->
+  <footer class="footer bg-dark text-light text-center py-4">
+    &copy; 2025 <strong>NatureAlert</strong> | Disaster Prediction & Safety Guide
+  </footer>
+
+
+</body>
+</html>

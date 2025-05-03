@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+}
+
+/* Container */
+.container-fluid {
+    width: 100%;
+}
+
+/* Image Section */
+.image-left {
+    width: 100%; /* Ensure it takes full width */
+    height: 435px;
+    margin-left: 0;
+    background-color: rgb(116, 81, 107);
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+/* Image Container */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 435px; /* Adjust this value as needed */
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the full container without distortion */
+    border-radius: 8px;
+}
+
+/* Buttons */
+.button {
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+}
+
+.button2 {
+    background-color: #C00C0C;
+    color: white;
+    border: 2px solid #000;
+    border-radius: 50px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin-left: 11%;
+    margin-top: 2%;
+}
+
+.button2:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.red {
+    color: #C00C0C;
+}
+
+/* News Section */
+.news-card {
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-card img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.news-card .card-body {
+    text-align: center;
+    padding: 20px;
+}
+
+.news-card .btn {
+    width: 100%;
+    font-weight: bold;
+}
+
+/* Query Page Styling */
+.query-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.query-container h2 {
+    text-align: center;
+    color: #0b2245;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .news-card img {
+        height: 150px;
+    }
+    
+    .query-container {
+        width: 90%;
+        padding: 15px;
+    }
+}

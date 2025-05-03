@@ -140,7 +140,7 @@ SECRET_KEY=your-secret-key
 
 # 6️⃣ **Run the App**
 
-python app.py
+python prediction.py
 
 Visit http://localhost:5000 in your browser to access the app.
 

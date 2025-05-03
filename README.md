@@ -29,11 +29,17 @@ A **Flask-based AI web application** that predicts the risk levels of **earthqua
 ## 📁 Folder Structure
 disaster-prediction-ai/
 ├── app.py                           # Main Flask application
+
 ├── requirements.txt                # Required Python packages
+
 ├── .env.example                    # Sample environment variables (safe for GitHub)
+
 ├── README.md                       # Project documentation
+
 ├── Dockerfile                      # (Optional) For containerizing the app
+
 ├── .dockerignore                   # Ignore unnecessary files in Docker builds
+
 
 ├── models/                         # Machine Learning models and training code
 │   ├── cyclone_model.pkl           # Cyclone prediction model
